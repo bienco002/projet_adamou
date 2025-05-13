@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuToggle {
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.3s ease; /* Ajout de la transition sur la couleur du texte */
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Ajout de cette propriété pour afficher les éléments horizontalement */
+}
+
+.menu li {
+    padding: 10px;
+    margin-right: 20px; /* Ajout de cette propriété pour espacer les éléments du menu */
+    border-bottom: none; /* Suppression de la bordure du bas pour les éléments du menu */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Ajout de la transition sur la couleur du texte */
+}
+
+.menu a:hover,
+.menuToggle:hover {
+    color: #ffd700; /* Couleur du texte lorsque le curseur s'approche */
+}
+
+.panier-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .menuToggle {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .menu ul {
+        flex-direction: column; /* Changement de la direction en colonne pour les écrans plus petits */
+    }
+
+    .menu li {
+        margin-right: 0; /* Ajustement de l'espacement pour les écrans plus petits */
+        border-bottom: 1px solid #555;
+    }
+}
+
+
+
+
+

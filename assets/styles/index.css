@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2.?family=Open+Sans:ital,wght@0,300..800;1,300..800&disply=wap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif; 
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+}
+.btn_add{
+    width: fit-content;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    background-color: #2bc48a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn_add img{
+    margin-right: 5px;
+    height: 20px;
+}
+table{
+    border-collapse: collapse;
+    color: #404040;
+}
+th{
+    font-size: 16px;
+    border-bottom: 4px solid #ffcb61;
+    font-weight: 500;
+}
+td{
+    font-weight: 400;
+    padding: 5px 30px;
+    font-size: 16px;
+}
+img{
+    height: 25px;
+}
+tr:nth-child(2n){
+    background-color: #f6f8f8;
+}
+tr:nth-child(2n) td {
+    background-color: #e0e0e0;
+}
+
+/* dans la forme */
+.form{
+    background-color: darkgray;
+    padding: 10px;
+    box-shadow: 0 0 4px rgba(red, green, blue, alpha);
+    border-radius: 10px;
+}
+.form form{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.erreur{
+    color: red;
+}
+input{
+    padding: 8px;
+    box-shadow: 2px 2px 5px rgb(32, 218, 103);
+    color: green;
+    font-size: 15px;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+input[type="submit"]{
+    margin: 10px;
+    background-color: aquamarine;
+    color: black;
+    box-shadow: 2px 2px 5px rgb(255, 8, 0);
+    cursor: pointer;
+}

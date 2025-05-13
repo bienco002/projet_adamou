@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Online - Restaurant</title>
+    <style>
+        /* Reset de base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @keyframes backgroundZoom {
+            0% {
+                background-size: 50%;
+            }
+            50% {
+                background-size: 90%;
+            }
+            50% {
+                background-size: 40%;
+            }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background:
+                url('images/chef.jpg') no-repeat center center fixed;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center top;
+            filter: brightness(1.2) blur(1);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            animation: backgroundZoom 5s ease-in-out infinite;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ff6347;
+            padding: 10px 20px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin-left: 300px;
+        }
+
+        
+
+        .welcome-title {
+            font-size: 3em;
+            color: #ff6347;
+            margin-bottom: 70px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .button-menu button {
+            width: 220px;
+            height: 70px;
+            background-color: #FFD700;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.3em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.4s, color 0.4s;
+        }
+
+        .button-menu button:hover {
+            background-color: #FF8C00;
+            color: white;
+        }
+
+        .right-bar {
+            width: 260px;
+            background-color: #ff7f50;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-left: 3px solid white;
+            padding: 30px 0;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-left: 100px;
+        }
+
+        .right-bar a {
+            text-decoration: none;
+            margin: 20px 0;
+            width: 80%;
+        }
+
+        .right-bar button {
+            width: 100%;
+            padding: 18px;
+            border-radius: 25px;
+            border: none;
+            background-color: #FFD700;
+            color: black;
+            font-weight: bold;
+            font-size: 1.3em;
+            cursor: pointer;
+            transition: background-color 0.4s, color 0.4s;
+        }
+
+        .right-bar button:hover {
+            background-color: #FF8C00;
+            color: white;
+        }
+
+        footer {
+            background-color: #ff6347;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.3);
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo.jpg" alt="Logo Food Online">
+</header>
+
+<div class="container">
+    <div class="main-content">
+        <h1 class="welcome-title"> WELCOME TO PROFOOD</h1> <!-- Titre ajouté -->
+        <div class="button-menu">
+            <a href="./menu.php">
+                <!-- Contenu du bouton ici si besoin -->
+            </a>
+        </div>
+    </div>
+
+    <div class="right-bar">
+        <a href="./pages/users/menu.php"><button> Voir les menus &#127860;</button></a>
+        <a href="./pages/auth/inscription.php"><button>Inscription &#128221;</button></a>
+        <a href="./pages/auth/se_connecter.php"><button>Connexion &#128272; </button></a>
+        
+    </div>
+</div>
+
+<footer>
+    <div class="contact-info">
+        <h2>Contact</h2>
+        <ul>
+            <li>Tél : 6787546356764</li>
+            <li>Email :groupe1@gmail.com</li>
+        </ul>
+    </div>
+
+    <div class="navigation-links">
+        <h2>Liens utiles</h2>
+        <ul>
+            <li><a href="#">À propos</a></li>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        </ul>
+    </div>
+
+    <div class="copyright">
+        <ul>
+            <li>© 2025 Group 1 TP Programmation Web</li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
