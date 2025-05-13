@@ -1,18 +1,18 @@
 <?php
 $menu = [
-    ["nom" => "bongo", "prix" => 2500, "image" => "./assets/images/bongo.jpg"],
-    ["nom" => "kondre", "prix" => 1500, "image" => "./assets/images/kondre.jpg"],
-    ["nom" => "eru", "prix" => 1500, "image" => "./assets/images/eru.jpg"],
-    ["nom" => "escargot sauté", "prix" => 1500, "image" => "./assets/images/Escargot sauté.jpg"],
-    ["nom" => "Sauce Taro", "prix" => 2500, "image" => "./assets/images/sauce taro.jpg"],
-    ["nom" => "Sanga Pile", "prix" => 3000, "image" => "./assets/images/sanga pile.jpg"],
-    ["nom" => "Poulet DG", "prix" => 1500, "image" => "./assets/images/poulet dg.jpg"],
-    ["nom" => "ndonba", "prix" => 2500, "image" => "./assets/images/ndonba.jpg"],
-    ["nom" => "Ndjama Ndjaman", "prix" => 3000, "image" => "./assets/images/Ndjama Ndjama.jpg"],
-    ["nom" => "Okok", "prix" => 1500, "image" => "./assets/images/okok.jpg"],
-    ["nom" => "Akwa", "prix" => 2500, "image" => "./assets/images/akwa.jpg"],
-    ["nom" => "Gombo", "prix" => 3000, "image" => "./assets/images/gombo.jpg"],
-    ["nom" => "Dokounou", "prix" => 1500, "image" => "./assets/images/dokounou.jpg"],
+    ["nom" => "bongo", "prix" => 2500, "image" => "../../assets/images/bongo.jpg"],
+    ["nom" => "kondre", "prix" => 1500, "image" => "../../assets/images/kondre.jpg"],
+    ["nom" => "eru", "prix" => 1500, "image" => "../../assets/images/eru.jpg"],
+    ["nom" => "escargot sauté", "prix" => 1500, "image" => "../../assets/images/Escargot sauté.jpg"],
+    ["nom" => "Sauce Taro", "prix" => 2500, "image" => "../../assets/images/sauce taro.jpg"],
+    ["nom" => "Sanga Pile", "prix" => 3000, "image" => "../../assets/images/sanga pile.jpg"],
+    ["nom" => "Poulet DG", "prix" => 1500, "image" => "../../assets/images/poulet dg.jpg"],
+    ["nom" => "ndonba", "prix" => 2500, "image" => "../../assets/images/ndonba.jpg"],
+    ["nom" => "Ndjama Ndjaman", "prix" => 3000, "image" => "../../assets/images/Ndjama Ndjama.jpg"],
+    ["nom" => "Okok", "prix" => 1500, "image" => "../../assets/images/okok.jpg"],
+    ["nom" => "Akwa", "prix" => 2500, "image" => "../../assets/images/akwa.jpg"],
+    ["nom" => "Gombo", "prix" => 3000, "image" => "../../assets/images/gombo.jpg"],
+    ["nom" => "Dokounou", "prix" => 1500, "image" => "../../assets/images/dokounou.jpg"],
     ["nom" => "Crevette saute", "prix" => 2500, "image" => "../../assets/images/crevette saute.jpg"],
     ["nom" => "Poulet Tchoukourise", "prix" => 3000, "image" => "../../assets/images/poulet tchoukourise.jpg"],
     ["nom" => "Lalo", "prix" => 2500, "image" => "../../assets/images/Lalo.jpg"], 
@@ -114,7 +114,7 @@ $menu = [
         </div>
     </header>
 
-    <form action="traitement.php" method="post">
+    <form action="./traitement.php" method="post">
         <div class="menu-container" id="menu">
             <?php foreach($menu as $item): ?>
                 <div class="menu-item">

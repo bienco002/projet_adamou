@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
 
-        header("Location:info_livraison.php");
+        header("Location:./info_livraison.php");
         
     } else {
         echo "Veuillez sélectionner au moins un plat.";
