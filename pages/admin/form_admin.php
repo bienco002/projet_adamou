@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulaire administrateur</title>
-    <link rel="stylesheet" href="/assets/styles/form_admin.css">
+    <link rel="stylesheet" href="../../assets/styles/form_admin.css">
 </head>
 
 <style>
     body{
-        background-image: url("image/image4.jpg");
+        background-image: url("../../assets/image/image4.jpg");
 
     }
     .title{
@@ -21,7 +21,7 @@
 <body>
 
 <?php
-include_once "conn.php";
+include_once "../../settings/conn.php";
 
 function security($donnees){
     $donnees=trim($donnees);					//supprime tout les espaces entrees par l'utilisateur
@@ -88,7 +88,7 @@ if (isset($_POST["valider"])) {
         
     </form>
     <footer>
-    <a href="gestion_admin.php"><button class="ped">Retrouver ma page</button></a>          
+    <a href="./gestion_admin.php"><button class="ped">Retrouver ma page</button></a>          
       </footer>
 </body>
 </html>

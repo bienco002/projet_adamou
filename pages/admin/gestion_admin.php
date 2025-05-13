@@ -6,7 +6,7 @@
     <title>admin</title>
     <style>
         body{
-            background-image: url("/assets/image/image2.jpg");
+            background-image: url("../../assets/image/image2.jpg");
         }
             .button:hover{
                 background-color:rgb(51, 21, 21);

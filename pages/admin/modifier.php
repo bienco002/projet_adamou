@@ -1,6 +1,6 @@
 
 <?php
-include_once "conn.php";
+include_once "../../settings/conn.php";
 
 function security($donnees){
     $donnees=trim($donnees);					//supprime tout les espaces entrees par l'utilisateur
@@ -38,11 +38,11 @@ if (isset($_POST["valider"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add</title>
-    <link rel="stylesheet" href="/assets/styles/index.css">
+    <link rel="stylesheet" href="../../assets/styles/index.css">
 </head>
 <body>
     <div class="form">
-        <a href="index.php" class="btn_add"><img src="add.png">Retour</a>
+        <a href="./index.php" class="btn_add"><img src="../../assets/image/add.png">Retour</a>
         <h2>Modifier un employé</h2>
         <p class="erreur_message">Veillez remplir tous les champs</p>
         <form action="" method="POST">

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD</title>
-    <link rel="stylesheet" href="/assets/styles/index.css">
+    <link rel="stylesheet" href="../../assets/styles/index.css">
     <style>
             .button:hover{
                 background-color:rgb(51, 21, 21);
@@ -12,7 +12,7 @@
                 color: aliceblue;
             }
             body{
-                background-image: url("/assets/image/image4.jpg");
+                background-image: url("../../assets/image/image4.jpg");
 
             }
             
@@ -38,7 +38,7 @@
 </head>
 <body>
     <div class="contener">
-        <a href="ajouter_emp.php" class="btn_add" ><img src="/assets/image/add.png">ajouter</a>
+        <a href="ajouter_emp.php" class="btn_add" ><img src="../../assets/image/add.png">ajouter</a>
         
         <table>
             <tr id_emp="items">
@@ -57,7 +57,7 @@
             
             <?php
              //inclure la page de connection
-              include_once "conn.php";
+              include_once "../../settings/conn.php";
             //requete pour afficher la liste des employer
             $req = mysqli_query($conn, "SELECT * FROM employer");
             if(mysqli_num_rows ($req) == 0){
@@ -76,8 +76,8 @@
                             <td><?=$row['jour']?></td>
                             <td><?=$row['debut']?></td>
                             <td><?=$row['fin']?></td>
-                            <td><a href="modifier.php?id_emp=<?=$row['id_emp']?>"><img src="pen.png"></a></td>
-                            <td><a href="supprimer.php?id_emp=<?=$row['id_emp']?>"><img src="sup.png"></a></td>
+                            <td><a href="modifier.php?id_emp=<?=$row['id_emp']?>"><img src="../../assets/icons/pen.png"></a></td>
+                            <td><a href="supprimer.php?id_emp=<?=$row['id_emp']?>"><img src="../../assets/icons/sup.png"></a></td>
                         </tr>
                     <?php
                 }

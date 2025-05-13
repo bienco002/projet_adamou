@@ -15,7 +15,7 @@
 </style>
     <body>
     <?php
-     include_once "conn.php";
+     include_once "../../settings/conn.php";
      //verifier que le boutton a ete clique
     if(isset($_POST['button'])){
     
@@ -39,7 +39,7 @@
                       VALUES ('$nom', '$prenom', '$telephone', '$genre', '$post','$jour', '$debut', '$fin')";
   
             if ($conn->query($insertQuery) === TRUE) { // si la requete a ete effectuee; redirection
-                header("location:index.php");
+                header("location:./index.php");
             }else{
                 $message ="Employer non ajouté";
             }
@@ -50,7 +50,7 @@
     }
     ?>
         <div class="form">
-            <a href="index.php" class="back_btn"><img src="" alt="">retour</a>
+            <a href="./index.php" class="back_btn"><img src="" alt="">retour</a>
             <h2>ajouter un employé</h2>
             <p class="eurreur_message">
                <?php 

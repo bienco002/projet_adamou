@@ -1,4 +1,4 @@
-<?php include ('conn.php');?>
+<?php include ('../../settings/conn.php');?>
 <h2>Add Product</h2>
 <form action="ajout.php" method="post" enctype="multipart/form-data">
     <label for="name">Product Name :</label>
@@ -14,14 +14,14 @@
 
 <?php
 If ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    Include ('conn.php');
+    Include ('../../settings/conn.php');
 
     $name = $_POST['name'];
     $description = $_POST['description'];
     $price = $_POST['price'];
     // $category = $_POST['category'];
     $image = $_FILES['image']['name'];
-    $target = "/assets/images/" . basename($image);
+    $target = "../../assets/images/" . basename($image);
 
     $sql = "INSERT INTO commandes (nom, description, image, prix) VALUES (?,?,?,?)";
     $conn->execute([$name, $description, $price, $image]);

@@ -1,6 +1,6 @@
 
 <?php
-include_once "conn.php";
+include_once "../../settings/conn.php";
 //verifier que le boutton a ete clique
 if(isset($_POST['button'])){
 
@@ -20,7 +20,7 @@ extract($_POST);
                  VALUES ('$titre', '$description', '$prix', '$image')";
 
        if ($conn->query($insertQuery) === TRUE) { // si la requete a ete effectuee; redirection
-           header("location:menu.php");
+           header("location:../users/menu.php");
        }else{
            $message ="menu non ajouté";
        }
